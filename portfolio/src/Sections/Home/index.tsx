@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+
 import './Home.scss'
 import personagem from '../../assets/personagem.svg'
 import monitor from '../../assets/pc.svg'
@@ -9,6 +9,7 @@ import pato from '../../assets/pato.svg'
 import teclado from '../../assets/teclado.png'
 import Draggable from 'react-draggable'
 import substituto from '../../assets/substituto.svg'
+import { useEffect, useState } from 'react'
 
 const imagens = [
   { src: pato, alt: 'Pato', x: -450, y: -75 },
