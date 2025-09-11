@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './SobreMim.scss'
 import substituto from '../../assets/SubstitutoSobresvg.svg'
 
