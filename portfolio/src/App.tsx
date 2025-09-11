@@ -2,6 +2,7 @@
 import './App.scss'
 import Navbar from './Components/Navbar'
 import Home from './Sections/Home'
+import SobreMim from './Sections/SobreMim'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       </header>
 
       <Home/>
+      <SobreMim/>
        
     </>
   )

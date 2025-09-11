@@ -40,7 +40,6 @@ const Home = () => {
         </Draggable>
       ))}
 
-      {/* Imagem do mobile */}
       <img src={substituto} alt="Substituto" className="home-substituto" />
     </section>
   )
