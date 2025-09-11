@@ -2,7 +2,7 @@ import SkillItem from '../../Components/SkillItem'
 import './Skills.scss'
 
 const Skills = () => {
-  const tech = ['Java', 'JavaScript', 'TypeScript','Python', 'HTML/CSS','React/Native','SpringBoot','Node.js', 'MongoDB', 'SQL'];
+  const tech = ['Java', 'JavaScript', 'TypeScript','Python', 'HTML/CSS','SQL','SpringBoot','Node.js', 'MongoDB', 'React/Native'];
   const habilidades = [
     "Criatividade",
     "Comunicação",
@@ -17,10 +17,11 @@ const Skills = () => {
     "Pacote Office",
     "Adobe Photoshop",
     "Adobe Premiere",
-    "Adobe After Effects",
+    "Jira",    
     "Notion",
     "Trello",
-    "Jira"
+    "Adobe After Effects",
+    
   ];
 
   return (
