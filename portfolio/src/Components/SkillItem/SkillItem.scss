@@ -1,0 +1,23 @@
+.skill-item {
+  padding: 8px 32px;
+  border: 2px solid #676767;
+  box-shadow: 0px 6px 0px rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  p {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.25);
+  }
+}

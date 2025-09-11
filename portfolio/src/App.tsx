@@ -2,6 +2,7 @@
 import './App.scss'
 import Navbar from './Components/Navbar'
 import Home from './Sections/Home'
+import Skills from './Sections/Skills'
 import SobreMim from './Sections/SobreMim'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
       <Home/>
       <SobreMim/>
+      <Skills/>
        
     </>
   )

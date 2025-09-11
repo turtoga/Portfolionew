@@ -1,6 +1,16 @@
 import { useEffect, useState } from 'react'
 import './SobreMim.scss'
 import substituto from '../../assets/SubstitutoSobresvg.svg'
+import Draggable from 'react-draggable'
+import novo from  '../../assets/GabrielNovo.png'
+import velho from  '../../assets/GabrielVelho.png'
+import arte from  '../../assets/GabrielArte.png'
+
+const imagens =[
+  { src: novo, alt: 'Gabriel Novo', x: 45, y: -36 },
+  { src: velho, alt: 'Gabriel Velho', x: 61, y: 173 },
+  { src: arte, alt: 'Gabriel Arte', x: -152, y: 2 },
+]
 
 const SobreMim = () => {
 
@@ -39,7 +49,17 @@ const SobreMim = () => {
           <div className='img'>
             <figure>
               <img src={substituto} alt="Substituto" className="sobre-substituto" />
-
+              {imagens.map((img, i) => (
+                <Draggable key={i} defaultPosition={{ x: img.x, y: img.y }}>
+                  <img
+                    draggable="false"
+                    src={img.src}
+                    alt={img.alt}
+                    className="icon"
+                    style={{ position: 'absolute', cursor: 'grab' }}
+                  />
+                </Draggable>
+              ))}
             </figure>
           </div>
         </div>
@@ -47,7 +67,7 @@ const SobreMim = () => {
         </aside>
         <article>
           <div className='dados'>
-            <p>{`São paulo, ${horaSp}`}</p>
+            <p>{`São Paulo, ${horaSp}`}</p>
             <div className='links'>
               <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
               <a href="https://github.com" target="_blank">Github</a>
@@ -64,7 +84,7 @@ const SobreMim = () => {
             </p>
           </div>
           <div className='educacao'>
-            <h3>Educação</h3>
+            <h3>Educação:</h3>
             <p>
               Tecnólogo em Desenvolvimento de<br/>
               Software Multiplataforma<br/>
