@@ -1,13 +1,12 @@
 .home {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
-  width: 100vw;
 
   &-content {
     opacity: 0;
@@ -31,8 +30,6 @@
   .icon {
     position: absolute;
 
-  
-
     &-personagem {
       animation: fadeIn 1.5s ease-in-out forwards;
       margin-top: 600px;
@@ -48,5 +45,23 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.home-substituto {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1040px) {
+  .home-content,
+  .icon {
+    display: none;
+  }
+
+  .home-substituto {
+    display: block;
   }
 }

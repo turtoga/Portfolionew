@@ -1,4 +1,3 @@
-
 import './Home.scss'
 import personagem from '../../assets/personagem.svg'
 import monitor from '../../assets/pc.svg'
@@ -9,7 +8,6 @@ import pato from '../../assets/pato.svg'
 import teclado from '../../assets/teclado.png'
 import Draggable from 'react-draggable'
 import substituto from '../../assets/substituto.svg'
-import { useEffect, useState } from 'react'
 
 const imagens = [
   { src: pato, alt: 'Pato', x: -450, y: -75 },
@@ -21,40 +19,29 @@ const imagens = [
 ]
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 990)
-    checkMobile() // verifica na montagem
-    window.addEventListener('resize', checkMobile)
-    return () => window.removeEventListener('resize', checkMobile)
-  }, [])
-
   return (
     <section id="home" className="home">
-      {isMobile ? (
-        <img src={substituto} alt="Substituto" className="home-substituto" />
-      ) : (
-        <>
-          <div className="home-content">
-            <h1>Prazer!<br/>Sou Gabriel</h1>
-            <h2>(Software Developer)</h2>
-          </div>
+      <div className="home-content">
+        <h1>Prazer!<br />Sou Gabriel</h1>
+        <h2>(Software Developer)</h2>
+      </div>
 
-          <img src={personagem} alt="Personagem" className="icon icon-personagem" />
-          {imagens.map((img, i) => (
-            <Draggable key={i} defaultPosition={{ x: img.x, y: img.y }}>
-              <img 
-                draggable="false"
-                src={img.src} 
-                alt={img.alt} 
-                className="icon" 
-                style={{ position: 'absolute', cursor: 'grab' }} 
-              />
-            </Draggable>
-          ))}
-        </>
-      )}
+      <img src={personagem} alt="Personagem" className="icon icon-personagem" />
+
+      {imagens.map((img, i) => (
+        <Draggable key={i} defaultPosition={{ x: img.x, y: img.y }}>
+          <img
+            draggable="false"
+            src={img.src}
+            alt={img.alt}
+            className="icon"
+            style={{ position: 'absolute', cursor: 'grab' }}
+          />
+        </Draggable>
+      ))}
+
+      {/* Imagem do mobile */}
+      <img src={substituto} alt="Substituto" className="home-substituto" />
     </section>
   )
 }

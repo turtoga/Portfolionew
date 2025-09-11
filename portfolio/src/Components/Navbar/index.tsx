@@ -1,18 +1,26 @@
-
-import './Navbar.scss'
+import { useState } from "react"
+import "./Navbar.scss"
+import hamburguer from "../../assets/hamburgerIcon.svg"
+import close from '../../assets/closeIcon.svg'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => setIsOpen(!isOpen)
+
   return (
     <nav className="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">SobreMim</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <button className="hamburger" onClick={toggleMenu}>
+        <img src={isOpen ? close : hamburguer} alt="Menu" />
+      </button>
+
+      <ul className={`menu ${isOpen ? "open" : ""}`}>
+        <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+        <li><a href="#sobre" onClick={() => setIsOpen(false)}>Sobre</a></li>
+        <li><a href="#projetos" onClick={() => setIsOpen(false)}>Projetos</a></li>
+        <li><a href="#contato" onClick={() => setIsOpen(false)}>Contato</a></li>
       </ul>
     </nav>
-
   )
 }
 
