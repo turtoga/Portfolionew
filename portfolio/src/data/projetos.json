@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Escola de Inglês",
+    "disc": "Página web responsiva para uma escola de inglês.",
+    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
+    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Escola de Inglês",
+    "disc": "Página web responsiva para uma escola de inglês.",
+    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
+    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Escola de Inglês",
+    "disc": "Página web responsiva para uma escola de inglês.",
+    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
+    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": "#"
+  }
+]

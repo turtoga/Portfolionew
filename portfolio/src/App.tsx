@@ -1,25 +1,31 @@
 
-import './App.scss'
-import Navbar from './Components/Navbar'
-import Home from './Sections/Home'
-import Skills from './Sections/Skills'
-import SobreMim from './Sections/SobreMim'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from './Components/Navbar';
+import Home from './Sections/Home';
+import Projeto from './Sections/Projeto';
+import Skills from './Sections/Skills';
+import SobreMim from './Sections/SobreMim';
+import ProjetoDetalhes from './Sections/ProjetoDetalhes'
 
 function App() {
-  
-
   return (
-    <>
+    <Router>
       <header>
-        <Navbar></Navbar>
+        <Navbar />
       </header>
 
-      <Home/>
-      <SobreMim/>
-      <Skills/>
-       
-    </>
-  )
+      <Switch>
+        <Route exact path="/">
+          <Home />
+          <SobreMim />
+          <Skills />
+          <Projeto />
+        </Route>
+
+        <Route path="/projeto/:id" component={ProjetoDetalhes} />
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;

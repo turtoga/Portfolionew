@@ -1,12 +1,13 @@
-import { useState } from "react"
-import "./Navbar.scss"
-import hamburguer from "../../assets/hamburgerIcon.svg"
-import close from '../../assets/closeIcon.svg'
+import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
+import "./Navbar.scss";
+import hamburguer from "../../assets/hamburgerIcon.svg";
+import close from '../../assets/closeIcon.svg';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <nav className="navbar">
@@ -15,14 +16,24 @@ const Navbar = () => {
       </button>
 
       <ul className={`menu ${isOpen ? "open" : ""}`}>
-        <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-        <li><a href="#sobre" onClick={() => setIsOpen(false)}>SobreMim</a></li>
-        <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
-        <li><a href="#projetos" onClick={() => setIsOpen(false)}>Projetos</a></li>
-        <li><a href="#contato" onClick={() => setIsOpen(false)}>Contato</a></li>
+        <li>
+          <HashLink smooth to="/#home" onClick={() => setIsOpen(false)}>Home</HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#sobre" onClick={() => setIsOpen(false)}>SobreMim</HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#skills" onClick={() => setIsOpen(false)}>Skills</HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#projetos" onClick={() => setIsOpen(false)}>Projetos</HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#contato" onClick={() => setIsOpen(false)}>Contato</HashLink>
+        </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
