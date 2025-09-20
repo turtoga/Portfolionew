@@ -10,6 +10,7 @@ const CardProjeto = ({projeto}:CardProjetoProps) => {
   return (
     <div className="card-projeto">
       <img src={projeto.imagemPrincipal} alt={projeto.title}/>
+      <h3>{projeto.title}</h3>
       <p>{projeto.disc}</p>
       <Link to={`/projeto/${projeto.id}`}>
         <button>Ver mais</button>

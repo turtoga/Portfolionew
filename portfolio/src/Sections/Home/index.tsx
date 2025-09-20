@@ -29,16 +29,17 @@ const Home = () => {
       <img src={personagem} alt="Personagem" className="icon icon-personagem" />
 
       {imagens.map((img, i) => (
-        <Draggable key={i} defaultPosition={{ x: img.x, y: img.y }}>
-          <img
-            draggable="false"
-            src={img.src}
-            alt={img.alt}
-            className="icon"
-            style={{ position: 'absolute', cursor: 'grab' }}
-          />
-        </Draggable>
-      ))}
+  <Draggable key={i} defaultPosition={{ x: img.x, y: img.y }}>
+    <img
+      draggable="false"
+      src={img.src}
+      alt={img.alt}
+      className="icon floating"
+      style={{ position: 'absolute', cursor: 'grab' }}
+    />
+  </Draggable>
+))}
+
 
       <img src={substituto} alt="Substituto" className="home-substituto" />
     </section>

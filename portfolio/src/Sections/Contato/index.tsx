@@ -9,11 +9,11 @@ const Contato = () => {
         <div className='text-container'>
           <h2>Gabriel Almeida</h2>
           <h3>Email</h3>
-          <a href="mailto:Bielallmeida.dev@gmail.com">Bielallmeida.dev@gmail.com</a>
+          <a href="mailto:Bielallmeida.dev@gmail.com">Bielalmeida.dev@gmail.com</a>
           <h3>Redes</h3>
           <div className='contato-redes'>
-            <a href="https://linkedin.com/in/seuPerfil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/seuPerfil" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/almeidagabrielferreira/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/turtoga" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           <h3>Mais</h3>
           <a href="/curriculo.pdf" download>Baixe meu Currículo</a>

@@ -69,8 +69,8 @@ const SobreMim = () => {
           <div className='dados'>
             <p>{`São Paulo, ${horaSp}`}</p>
             <div className='links'>
-              <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
-              <a href="https://github.com" target="_blank">Github</a>
+              <a href="https://www.linkedin.com/in/almeidagabrielferreira/" target="_blank">Linkedin</a>
+              <a href="https://github.com/turtoga" target="_blank">Github</a>
             </div>
           </div>
           <div className='sobre'>

@@ -51,6 +51,14 @@
     .links {
       display: flex;
       gap: 20px;
+
+      a{
+        transition: color 0.2s ease, transform 0.2s ease;
+        &:hover {
+          color: #b4b4b4;
+          transform: translateY(-2px);
+        }
+      }
     }
   }
 

@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Escola de Inglês",
-    "disc": "Página web responsiva para uma escola de inglês.",
-    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
+    "title": "Odara English School",
+    "disc": "Website responsivo para escola de inglês com abordagem afrocentrada.",
+    "descricao": "Desenvolvemos um site moderno e responsivo para a Odara English School, destacando cursos, professores e horários. O projeto incorpora elementos descolonizadores e cultura afrocentrada, criando uma experiência interativa e acolhedora para alunos e visitantes. Desenvolvido como parte de um projeto acadêmico da faculdade.",
     "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
     "imagemPrincipal": "https://via.placeholder.com/300x180",
     "imagensCarrossel": [
@@ -11,14 +11,14 @@
       "https://via.placeholder.com/300x180/7fbfff",
       "https://via.placeholder.com/300x180/7fff7f"
     ],
-    "link": "#"
+    "link": "https://github.com/turtoga/OdaraEnglishSchool"
   },
   {
     "id": 2,
-    "title": "Escola de Inglês",
-    "disc": "Página web responsiva para uma escola de inglês.",
-    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
-    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
+    "title": "Tattoo Service Node.js",
+    "disc": "Sistema de gerenciamento para estúdios de tatuagem desenvolvido em Node.js.",
+    "descricao": "Projeto inicial desenvolvido para a Streetwise (cliente real) para simplificar a gestão de estúdios de tatuagem. Inclui cadastro de clientes, colaboradores, procedimentos, materiais e usuários, utilizando Node.js, Express, Sequelize e MySQL. A aplicação possui páginas renderizadas com Express Handlebars e permite criar usuários padrão, criptografar senhas e gerenciar dados do estúdio de forma completa.",
+    "techUtilizadas": ["Node.js", "Express", "Express Handlebars", "Handlebars", "Sequelize", "MySQL", "Bcrypt", "Body-parser", "Nodemon", "JavaScript"],
     "imagemPrincipal": "https://via.placeholder.com/300x180",
     "imagensCarrossel": [
       "https://via.placeholder.com/300x180/ff7f7f",
@@ -29,10 +29,56 @@
   },
   {
     "id": 3,
-    "title": "Escola de Inglês",
-    "disc": "Página web responsiva para uma escola de inglês.",
-    "descricao": "Página web desenvolvida para apresentar cursos, professores e horários de uma escola de inglês, com design responsivo e interativo.",
-    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
+    "title": "InkDash",
+    "disc": "Aplicação React para gerenciamento de estúdios de tatuagem.",
+    "descricao": "Evolução do Tattoo Service Node.js, desenvolvido como projeto acadêmico com tecnologias modernas. InkDash inclui login, dashboard, controle de clientes e agendamentos, com componentes reutilizáveis e integração via Axios, tornando o gerenciamento rápido, intuitivo e eficiente. Permite estudar padrões de front-end com React e boas práticas de integração de APIs.",
+    "techUtilizadas": ["React", "JavaScript", "Axios", "React Router DOM"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": "https://github.com/TechWeavers/tattoo-management-react"
+  },
+  {
+    "id": 4,
+    "title": "EasyPsi",
+    "disc": "Um sistema de gerenciamento de pacientes e controle financeiro voltado para psicólogos que atendem online.",
+    "descricao": "EasyPsi é uma plataforma de gestão para psicólogos que trabalham de maneira independente e online. Permite cadastro detalhado de pacientes, registro de evolução de dados clínicos, integração com Google Agenda para gerenciamento de consultas, emissão de recibos, lembretes de pagamento, dashboard financeiro com PDFs automatizados, histórico de pacientes e funcionalidades de CRUD. O projeto está em desenvolvimento.",
+    "techUtilizadas": ["React", "FastAPI", "MongoDB", "JavaScript", "Google Agenda API"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "title": "Lastrear Imóvel",
+    "disc": "Plataforma web para centralização de leads e otimização da análise de crédito.",
+    "descricao": "Lastrear Imóvel é uma plataforma web desenvolvida para empresas do setor imobiliário, centralizando dados de leads e acelerando a análise de crédito. Facilita o gerenciamento dos leads com categorização por status, reduz tarefas manuais e aumenta a produtividade da equipe de corretores. Desenvolvido para um cliente real.",
+    "techUtilizadas": ["React", "Node.js", "MongoDB", "JavaScript"],
+    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagensCarrossel": [
+      "https://via.placeholder.com/300x180/ff7f7f",
+      "https://via.placeholder.com/300x180/7fbfff",
+      "https://via.placeholder.com/300x180/7fff7f"
+    ],
+    "link": {
+      "backend": "https://github.com/Melancia-Salgada/aprovafacil",
+      "frontendMobile": "https://github.com/Melancia-Salgada/lastrear-imovel",
+      "frontendDesktop": "https://github.com/Melancia-Salgada/PI5_website"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Gestão Industrial de Estoque",
+    "disc": "Software de gestão de estoque e automação industrial.",
+    "descricao": "Aplicação voltada para otimizar o controle de estoque e automatizar processos industriais. Permite gerenciar usuários, armazéns, pedidos e maquinário, além de calcular automaticamente quantidades necessárias na pesagem de embalagens, oferecendo relatórios precisos e agilidade nas operações. Desenvolvido para um cliente real.",
+    "techUtilizadas": ["React", "Node.js", "MongoDB", "SQL", "JavaScript"],
     "imagemPrincipal": "https://via.placeholder.com/300x180",
     "imagensCarrossel": [
       "https://via.placeholder.com/300x180/ff7f7f",
