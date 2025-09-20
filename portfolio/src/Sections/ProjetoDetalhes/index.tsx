@@ -73,9 +73,12 @@ const ProjetosDetalhes = () => {
         </div>
 
         <div className="descricao">
-          <h2>Sobre:</h2>
-          <p>{projeto.descricao}</p>
-        </div>
+  <h2>Sobre:</h2>
+  {projeto.descricao.split("\n").map((line, index) => (
+    <p key={index}>{line}</p>
+  ))}
+</div>
+
       </div>
 
       <div className="tecnologias">
