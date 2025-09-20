@@ -6,6 +6,7 @@ import Projeto from './Sections/Projeto';
 import Skills from './Sections/Skills';
 import SobreMim from './Sections/SobreMim';
 import ProjetoDetalhes from './Sections/ProjetoDetalhes'
+import Contato from "./Sections/Contato";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <SobreMim />
           <Skills />
           <Projeto />
+          <Contato/>
         </Route>
 
         <Route path="/projeto/:id" component={ProjetoDetalhes} />
