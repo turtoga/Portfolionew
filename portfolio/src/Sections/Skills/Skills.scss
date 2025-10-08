@@ -64,7 +64,7 @@
 
     .habilidades, .tech, .programas {
       h2 {
-        font-size: 28px;
+        font-size: 26px;
         margin: 0;
       }
     }
@@ -93,4 +93,26 @@
   }
 
  
+}
+
+@media (max-height: 920px) {
+
+.skills {
+    padding:0 20px;
+    
+    
+
+    .first {
+      flex-direction: column;
+    }
+
+    .habilidades, .tech, .programas {
+      h2 {
+        font-size: 28px;
+        margin: 0;
+      }
+    }
+
+  }
+  
 }

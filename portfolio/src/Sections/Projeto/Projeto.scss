@@ -37,3 +37,10 @@
   }
   
 }
+
+@media (max-height: 1220px) {
+  .projeto .projeto-grid .card {
+    height: 300px !important;
+    font-size: 0.9rem;
+  }
+}

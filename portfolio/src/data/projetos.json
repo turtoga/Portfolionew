@@ -1,31 +1,38 @@
 [
+  
   {
     "id": 1,
-    "title": "Odara English School",
-    "disc": "Website responsivo para escola de inglês com abordagem afrocentrada.",
-    "descricao": "Desenvolvemos um site moderno e responsivo para a Odara English School, destacando cursos, professores e horários.\nO projeto incorpora elementos descolonizadores e cultura afrocentrada, criando uma experiência interativa e acolhedora para alunos e visitantes.\nAlunos e visitantes passaram a acessar informações sobre cursos e professores de forma clara, enquanto a escola fortaleceu sua identidade ao valorizar a cultura afrocentrada, aumentando engajamento e atraindo novos estudantes.\nDesenvolvido como parte de um projeto acadêmico da faculdade.",
-    "techUtilizadas": ["HTML", "CSS", "JavaScript", "React"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "title": "Lastrear Imóvel",
+    "disc": "Plataforma mobile para centralização de leads e otimização da análise de crédito.",
+    "descricao": "Lastrear Imóvel é uma plataforma mobile desenvolvida para empresas do setor imobiliário, centralizando dados de leads e acelerando a análise de crédito.\nFacilita o gerenciamento dos leads com categorização por status, reduz tarefas manuais e aumenta a produtividade da equipe de corretores.\nA empresa passou a responder clientes mais rápido, reduzir tarefas repetitivas e aumentar a produtividade de corretores, evitando a perda de oportunidades.",
+    "techUtilizadas": ["React", "Node.js", "MongoDB", "JavaScript"],
+    "imagemPrincipal": "/projetos/lastrear/celular.png",
     "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
+      "/projetos/lastrear/celular.png",
+      "/projetos/lastrear/form.jpg"
     ],
-    "link": "https://github.com/turtoga/OdaraEnglishSchool"
-  },
-  {
+    "link": {
+      "front": "https://github.com/Melancia-Salgada/PI5_website",
+      "back": "https://github.com/Melancia-Salgada/aprovafacil",
+      "mobile": "https://github.com/Melancia-Salgada/lastrear-imovel"
+    }
+  },{
     "id": 2,
-    "title": "Tattoo Service Node.js",
-    "disc": "Sistema de gerenciamento para estúdios de tatuagem desenvolvido em Node.js.",
-    "descricao": "Projeto inicial desenvolvido para a Streetwise (cliente real) para simplificar a gestão de estúdios de tatuagem.\nInclui cadastro de clientes, colaboradores, procedimentos, materiais e usuários, utilizando Node.js, Express, Sequelize e MySQL.\nA aplicação possui páginas renderizadas com Express Handlebars e permite criar usuários padrão, criptografar senhas e gerenciar dados do estúdio de forma completa.\nA empresa passou a organizar clientes, colaboradores e materiais de forma segura, reduzindo erros e liberando tempo para os profissionais focarem no trabalho artístico.",
-    "techUtilizadas": ["Node.js", "Express", "Express Handlebars", "Handlebars", "Sequelize", "MySQL", "Bcrypt", "Body-parser", "Nodemon", "JavaScript"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "title": "EasyPsi",
+    "disc": "Um sistema de gerenciamento de pacientes e controle financeiro voltado para psicólogos que atendem online.",
+    "descricao": "EasyPsi é uma plataforma de gestão para psicólogos que trabalham de maneira independente e online.\nPermite cadastro detalhado de pacientes, registro de evolução de dados clínicos, integração com Google Agenda para gerenciamento de consultas, emissão de recibos, lembretes de pagamento, dashboard financeiro com PDFs automatizados, histórico de pacientes e funcionalidades de CRUD.\nPsicólogos que atendem online puderam centralizar o acompanhamento clínico e financeiro dos pacientes, reduzindo esquecimentos de consultas e otimizando o fluxo de caixa, ganhando mais tempo para focar no atendimento humano.",
+    "techUtilizadas": ["React", "FastAPI", "MongoDB", "JavaScript", "Google Agenda API"],
+    "imagemPrincipal": "/projetos/easypsi/home.png",
     "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
+      "/projetos/easypsi/financeiro.png",
+      "/projetos/easypsi/home.png",
+      "/projetos/easypsi/login.png",
+      "/projetos/easypsi/logindark.png"
     ],
-    "link": "#"
+    "link": {
+      "front": "https://github.com/Melancia-Salgada/psico-frontend",
+      "back": "https://github.com/Melancia-Salgada/psico-backend"
+    }
   },
   {
     "id": 3,
@@ -33,58 +40,50 @@
     "disc": "Aplicação React para gerenciamento de estúdios de tatuagem.",
     "descricao": "Evolução do Tattoo Service Node.js, desenvolvido como projeto acadêmico com tecnologias modernas.\nInkDash inclui login, dashboard, controle de clientes e agendamentos, com componentes reutilizáveis e integração via Axios, tornando o gerenciamento rápido, intuitivo e eficiente.\nPermite estudar padrões de front-end com React e boas práticas de integração de APIs.\nA empresa pôde gerenciar clientes e agendamentos de forma centralizada e intuitiva, reduzindo falhas em marcações e aumentando a agilidade administrativa.",
     "techUtilizadas": ["React", "JavaScript", "Axios", "React Router DOM"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "imagemPrincipal": "/projetos/inkdash/dashboard.png",
     "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
-    ],
-    "link": "https://github.com/TechWeavers/tattoo-management-react"
-  },
-  {
-    "id": 4,
-    "title": "EasyPsi",
-    "disc": "Um sistema de gerenciamento de pacientes e controle financeiro voltado para psicólogos que atendem online.",
-    "descricao": "EasyPsi é uma plataforma de gestão para psicólogos que trabalham de maneira independente e online.\nPermite cadastro detalhado de pacientes, registro de evolução de dados clínicos, integração com Google Agenda para gerenciamento de consultas, emissão de recibos, lembretes de pagamento, dashboard financeiro com PDFs automatizados, histórico de pacientes e funcionalidades de CRUD.\nPsicólogos que atendem online puderam centralizar o acompanhamento clínico e financeiro dos pacientes, reduzindo esquecimentos de consultas e otimizando o fluxo de caixa, ganhando mais tempo para focar no atendimento humano.",
-    "techUtilizadas": ["React", "FastAPI", "MongoDB", "JavaScript", "Google Agenda API"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
-    "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
-    ],
-    "link": "#"
-  },
-  {
-    "id": 5,
-    "title": "Lastrear Imóvel",
-    "disc": "Plataforma web para centralização de leads e otimização da análise de crédito.",
-    "descricao": "Lastrear Imóvel é uma plataforma web desenvolvida para empresas do setor imobiliário, centralizando dados de leads e acelerando a análise de crédito.\nFacilita o gerenciamento dos leads com categorização por status, reduz tarefas manuais e aumenta a produtividade da equipe de corretores.\nA empresa passou a responder clientes mais rápido, reduzir tarefas repetitivas e aumentar a produtividade de corretores, evitando a perda de oportunidades.",
-    "techUtilizadas": ["React", "Node.js", "MongoDB", "JavaScript"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
-    "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
+      "/projetos/inkdash/dashboard.png",
+      "/projetos/inkdash/login.png",
+      "/projetos/inkdash/estoque.png"
     ],
     "link": {
-      "backend": "https://github.com/Melancia-Salgada/aprovafacil",
-      "frontendMobile": "https://github.com/Melancia-Salgada/lastrear-imovel",
-      "frontendDesktop": "https://github.com/Melancia-Salgada/PI5_website"
+      "front": "https://github.com/TechWeavers/tattoo-management-react",
+      "back": "https://github.com/TechWeavers/PI-StreetWise-ERP-3Semestre"
+    }
+  },
+  
+  
+  {
+    "id": 4,
+    "title": "Tattoo Service Node.js",
+    "disc": "Sistema de gerenciamento para estúdios de tatuagem desenvolvido em Node.js.",
+    "descricao": "Projeto inicial desenvolvido para a Streetwise (cliente real) para simplificar a gestão de estúdios de tatuagem.\nInclui cadastro de clientes, colaboradores, procedimentos, materiais e usuários, utilizando Node.js, Express, Sequelize e MySQL.\nA aplicação possui páginas renderizadas com Express Handlebars e permite criar usuários padrão, criptografar senhas e gerenciar dados do estúdio de forma completa.\nA empresa passou a organizar clientes, colaboradores e materiais de forma segura, reduzindo erros e liberando tempo para os profissionais focarem no trabalho artístico.",
+    "techUtilizadas": ["Node.js", "Express", "Express Handlebars", "Handlebars", "Sequelize", "MySQL", "Bcrypt", "Body-parser", "Nodemon", "JavaScript"],
+    "imagemPrincipal": "/projetos/streetwise/agenda.png",
+    "imagensCarrossel": [
+      "/projetos/streetwise/agenda.png",
+      "/projetos/streetwise/login.png",
+      "/projetos/streetwise/erro.png",
+      "/projetos/streetwise/dashboard.png"
+    ],
+    "link": {
+      "front":"https://github.com/TechWeavers/tattoo-service-nodejs",
+      "back": "https://github.com/TechWeavers/tattooManagement"
     }
   },
   {
-    "id": 6,
-    "title": "Gestão Industrial de Estoque",
-    "disc": "Software de gestão de estoque e automação industrial.",
-    "descricao": "Aplicação voltada para otimizar o controle de estoque e automatizar processos industriais.\nPermite gerenciar usuários, armazéns, pedidos e maquinário, além de calcular automaticamente quantidades necessárias na pesagem de embalagens, oferecendo relatórios precisos e agilidade nas operações.\nA empresa conseguiu reduzir desperdícios e automatizar o controle de estoque, gerando relatórios confiáveis que aumentaram a eficiência operacional e diminuíram custos.",
-    "techUtilizadas": ["React", "Node.js", "MongoDB", "SQL", "JavaScript"],
-    "imagemPrincipal": "https://via.placeholder.com/300x180",
+    "id": 5,
+    "title": "Odara English School",
+    "disc": "Website responsivo para escola de inglês com abordagem afrocentrada.",
+    "descricao": "Desenvolvemos um site moderno e responsivo para a Odara English School, destacando cursos, professores e horários.\nO projeto incorpora elementos descolonizadores e cultura afrocentrada, criando uma experiência interativa e acolhedora para alunos e visitantes.\nAlunos e visitantes passaram a acessar informações sobre cursos e professores de forma clara, enquanto a escola fortaleceu sua identidade ao valorizar a cultura afrocentrada, aumentando engajamento e atraindo novos estudantes.\nDesenvolvido como parte de um projeto acadêmico da faculdade.",
+    "techUtilizadas": ["HTML", "CSS", "Bootstrap","JavaScript"],
+    "imagemPrincipal": "/projetos/odara/homepage.png",
     "imagensCarrossel": [
-      "https://via.placeholder.com/300x180/ff7f7f",
-      "https://via.placeholder.com/300x180/7fbfff",
-      "https://via.placeholder.com/300x180/7fff7f"
+      "/projetos/odara/homepage.png",
+      "/projetos/odara/referencias.png",
+      "/projetos/odara/tipos.png",
+      "/projetos/odara/footer.png"
     ],
-    "link": "#"
+    "link": "https://github.com/turtoga/OdaraEnglishSchool"
   }
 ]

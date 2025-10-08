@@ -128,11 +128,6 @@
   
 
   }
-
-
-
-  
-  
 }
 
 @media (max-width: 768px) {
@@ -164,9 +159,24 @@
       font-size: 18px;
     }
   }
-
-  
   }
+}
 
+@media (max-height: 920px) {
+
+.sobre-mim{
+    .sobre-content {
+    gap: 20px;
+    .img{
+      height: auto;
+    }
+  }
+  .sobre-substituto{
+    display: block;
+    max-width: 350px;
+  }
+  
+
+  }
   
 }

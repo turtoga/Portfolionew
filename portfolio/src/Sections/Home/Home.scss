@@ -69,3 +69,20 @@
     display: block;
   }
 }
+
+@media (max-height: 920px) {
+
+
+  .home-content,
+  .icon {
+    display: none;
+  }
+
+  .home-substituto {
+    display: block;
+    height: 600px;
+    margin-top: 20px;
+  }
+}
+
+

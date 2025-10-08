@@ -1,41 +1,55 @@
 import { useParams, useHistory } from "react-router-dom";
-import type { ProjetoType } from "../../types/ProjetoType";
-import projetos from "../../data/projetos.json"; 
 import { useEffect, useState } from "react";
-import './ProjetosDetalhes.scss'
+import projetos from "../../data/projetos.json";
+import "./ProjetosDetalhes.scss";
 import SkillItem from "../../Components/SkillItem";
 
-const ProjetosDetalhes = () => {
+const ProjetosDetalhes: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const history = useHistory();
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  interface ProjetoType {
+  id: number;
+  title: string;
+  disc: string;
+  descricao: string;
+  techUtilizadas: string[];
+  imagemPrincipal: string;
+  imagensCarrossel: string[];
+  link:
+    | string
+    | {
+        front?: string;
+        back?: string;
+        mobile?: string;
+      };
+  }
+
 
   const projeto: ProjetoType | undefined = projetos.find(
     (p) => p.id === Number(id)
   );
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const prevSlide = () => {
     if (!projeto) return;
-    setCurrentIndex((prev) => 
+    setCurrentIndex((prev) =>
       prev === 0 ? projeto.imagensCarrossel.length - 1 : prev - 1
     );
   };
 
   const nextSlide = () => {
     if (!projeto) return;
-    setCurrentIndex((prev) => 
+    setCurrentIndex((prev) =>
       prev === projeto.imagensCarrossel.length - 1 ? 0 : prev + 1
     );
   };
 
-  // Troca automática a cada 3 segundos
   useEffect(() => {
     if (!projeto) return;
     const interval = setInterval(() => {
       nextSlide();
     }, 3000);
-
     return () => clearInterval(interval);
   }, [projeto, currentIndex]);
 
@@ -45,9 +59,7 @@ const ProjetosDetalhes = () => {
     }
   }, [projeto, history]);
 
-  if (!projeto) {
-    return null; 
-  }
+  if (!projeto) return null;
 
   return (
     <section className="projeto-detalhes">
@@ -60,25 +72,63 @@ const ProjetosDetalhes = () => {
               src={projeto.imagensCarrossel[currentIndex]}
               alt={`${projeto.title} ${currentIndex + 1}`}
             />
-            <button className="prev" onClick={prevSlide}>&lt;</button>
-            <button className="next" onClick={nextSlide}>&gt;</button>
+            <button className="prev" onClick={prevSlide}>
+              &lt;
+            </button>
+            <button className="next" onClick={nextSlide}>
+              &gt;
+            </button>
           </div>
 
-          <a 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
+          <div className="links">
+            {projeto.link && typeof projeto.link === "object" ? (
+              <>
+                {projeto.link.front && (
+                  <a
+                    href={projeto.link.front}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend
+                  </a>
+                )}
+                {projeto.link.back && (
+                  <a
+                    href={projeto.link.back}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Backend
+                  </a>
+                )}
+                {projeto.link.mobile && (
+                  <a
+                    href={projeto.link.mobile}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Mobile
+                  </a>
+                )}
+              </>
+            ) : typeof projeto.link === "string" ? (
+              <a
+                href={projeto.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            ) : null}
+          </div>
         </div>
 
         <div className="descricao">
-  <h2>Sobre:</h2>
-  {projeto.descricao.split("\n").map((line, index) => (
-    <p key={index}>{line}</p>
-  ))}
-</div>
-
+          <h2>Sobre:</h2>
+          {projeto.descricao.split("\n").map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
       </div>
 
       <div className="tecnologias">
