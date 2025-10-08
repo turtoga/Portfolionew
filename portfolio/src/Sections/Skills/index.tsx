@@ -8,7 +8,8 @@ const Skills = () => {
     "Comunicação",
     "Trabalho em equipe",
     "Resolução de problemas",
-    "Aprendizado rápido"
+    "Aprendizado rápido",
+    "Inglês avançado"
   ];
 
   const programa = [
